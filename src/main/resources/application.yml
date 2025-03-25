@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+oci:
+  bucket:
+    name: scholarbridge-content
+  namespace: ${OCI_NAMESPACE}
+  region: ${OCI_REGION}
+server:
+  port: ${PORT:8080}
